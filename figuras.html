@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Figuras Geometricas | Curso practico js</title>
+</head>
+<body>
+    <header>
+        <div id="header">
+        <h1>FIGURAS GEOMETRICAS</h1>
+        <p>PRIMER TALLER DEL CURSO DE JAVASCRIPT</p>
+    </div>
+    </header>
+    <div id="cajas">
+    <section>
+        <h2>CALCULAR EL AREA Y EL PERIMETRO DE UN CUADRADO</h2>
+        <form action="">
+            <label for="InputCuadrado">
+                ESCRIBE CUANTO MIDE CADA LADO DE TU CUADRADO:
+            </label> <br>
+            <div id="container3">
+            <div id="container">
+            <input placeholder="Escribe un numero" id="InputCuadrado" type="number" /> 
+            </div>
+            <div id="container2">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button> 
+            <button type="button" onclick="calcularAreaCuadrada()">Calcular el area</button>
+            </div>
+            </div>
+        </form>
+    </section>
+    <section>
+        <h2>CALCULAR EL AREA Y PERIMETRO DE UN TRIANGULO </h2>
+        <form action="">
+            <label for="InputTriangulo">
+                ESCRIBE CUANTO MIDE CADA LADO DE TU TRIANGULO:
+            </label> <br>
+            <div id="container3">
+            <div id="container">
+            <input placeholder="Lado 1" id="InputTriangulo1" type="number" /> 
+            <input placeholder="Lado 2" id="InputTriangulo2" type="number" /> 
+            <input placeholder="Lado 3" id="InputBaseTriangulo" type="number" />
+            </div> 
+            <div id="container2">
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button> 
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>   
+        </div>
+    </div>
+        </form>
+    </section>
+    <section>
+        <h2>CALCULAR EL PERIMETRO Y AREA DE UN CIRCULO</h2>
+        <form action="">
+            <label for="InputCirculo">
+                ESCRIBE CUANTO MIDE EL RADIO DE TU CIRCULO:
+            </label> <br>
+            <div id="container3">
+            <div id="container">
+            <input placeholder="Escribe un numero" id="InputCirculo" type="number" /> 
+            </div>
+            <div id="container2">
+            <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button> 
+            <button type="button" onclick="calcularAreaCirculo()">Calcular el area</button>
+        </div>
+        </div>
+        </form>
+    </section>
+</div>
+    <script src="./figuras.js"></script>
+</body>
+</html>
